@@ -24,3 +24,55 @@ a {
     background: black;
   }
 }
+
+/* profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: space-between;
+  grid-template-columns: 20px;
+  flex-wrap: wrap;
+}
+.i-profile h1 {
+  width: 700px;
+  font-size: 70px;
+  color: rgb(255, 253, 253);
+  position: relative;
+  top: 110px;
+  left: 140px;
+}
+
+.i-profile p {
+  position: absolute;
+  bottom: 230px;
+  font-size: large;
+  color: #999;
+  width: 470px;
+  text-align: left;
+  left: 140px;
+}
+
+.i-me {
+  position: relative;
+}
+.lain {
+  position: absolute;
+  top: 375px;
+  left: 310px;
+}
+
+.lain-1 {
+  position: absolute;
+  right: 0px;
+  top: 100px;
+}
+
+.img-me {
+  border-radius: 10%;
+  position: relative;
+  right: 100px;
+  bottom: 90px;
+  z-index: 1;
+}
