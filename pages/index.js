@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
        <div className="profile">
-        <h1>الحقيرة</h1>
+        <h1>الحقيرة هسة صار ساعة سودة الشفتيني بيها </h1>
 
    
     </div>
