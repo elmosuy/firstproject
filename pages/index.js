@@ -6,6 +6,7 @@ export default function Home() {
   return (
        <div className="profile">
         <h1>الحقيرة هسة صار ساعة سودة الشفتيني بيها </h1>
+    <h2>انجبي</h2>
 
    
     </div>
