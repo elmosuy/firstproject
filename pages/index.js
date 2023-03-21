@@ -5,18 +5,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
        <div className="profile">
-      <div className="i-profile">
-        <div className="i-me">
-          <h1>Hi my name is Ayman Elmosuy , I'am Web Developer</h1>
-           <h1>الحقيرة</h1>
-       
-       
-          <p>
-            work in Full stack Developer Front End developer and Back End
-            developer
-          </p>
-        </div>
-      </div>
+        <h1>الحقيرة</h1>
 
    
     </div>
