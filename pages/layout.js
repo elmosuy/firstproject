@@ -86,10 +86,10 @@ function navre(){
 </section>
     <div className="media">
      
-   <a href="https://facebook.com/"> <img src="face.svg" alt="" width={30} style={{background:`linear-gradient(to left,${bac.con} ,#e66465 )` }}  /></a>
-  <a href="https://www.instagram.com/">  <img src="insta.svg" alt="" width={25} style={{background:`linear-gradient(to left,${bac.con} ,#e66465 )` }}/></a>
-    <a href="https://twitter.com/login"><img src="twitter.svg" alt="" width={25} style={{background:`linear-gradient(to left,${bac.con} ,#e66465 )` }} /></a>
-   <a href="https://www.linkedin.com/"> <img src="link.svg" alt="" width={25} style={{background:`linear-gradient(to left,${bac.con} ,#e66465 )` }} /></a>
+   <a href="https://facebook.com/"> Facebook</a>
+  <a href="https://www.instagram.com/">  instagram</a>
+    <a href="https://twitter.com/login">twitter</a>
+   <a href="https://www.linkedin.com/"> linkdin</a>
  <input type="color" title="Set Color" alt="set Color"  className="setcol" name="" id="" onChange={e=>bac.setcon(e.target.value)}/>
   
   
