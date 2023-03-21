@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React,{useEffect, useRef, useState} from "react"
 import { useContext } from "react";
-import AppContext from "./Colorcontext";
 import { motion } from "framer-motion";
 const Layout = ({children}) => {
 
@@ -16,7 +15,6 @@ const handello=()=>{
   doc.classList.toggle("opcl")
 }
 
-const bac=useContext(AppContext)    
   const [color,setcolor]=useState()
   
 function navre(){  
@@ -38,7 +36,7 @@ function navre(){
 
   return (
     <div >
-     <div className="header"   style={{background:`linear-gradient(to left,${bac.con} ,#e66465 )` }}>
+     <div className="header"   style={{background:`linear-gradient(to left ,#e66465 )` }}>
         <motion.h1 drag dragConstraints={{bottom:10,top:1,left:10,right:1} }>Moon</motion.h1>
           
         
@@ -54,7 +52,7 @@ function navre(){
            <div className="search" dir="rtl" title="searching" >  <input type="search" placeholder="ابحث..." name="" id="" /></div>
  </ul>
       <section className='burg' onClick={navb}><p>|</p> <p>|</p><p>|</p></section>
-      <nav className='navnar' id='navbar'style={{background:`linear-gradient(to left,${bac.con} ,rgba(0, 17, 255,0) )` }}  >
+      <nav className='navnar' id='navbar'style={{background:`linear-gradient(to left,red ,rgba(0, 17, 255,0) )` }}  >
                         
    
              
@@ -68,7 +66,7 @@ function navre(){
       </ul>
        <div className="setcolor">
        <p>set color</p>
-       <input type="color"  placeholder="Set Color" onChange={e=>bac.setcon(e.target.value)} name="" id="" />
+       <input type="color"  placeholder="Set Color" name="" id="" />
        <div onClick={handello } className="logi">Login</div>
 
       </div>
@@ -90,7 +88,6 @@ function navre(){
   <a href="https://www.instagram.com/">  instagram</a>
     <a href="https://twitter.com/login">twitter</a>
    <a href="https://www.linkedin.com/"> linkdin</a>
- <input type="color" title="Set Color" alt="set Color"  className="setcol" name="" id="" onChange={e=>bac.setcon(e.target.value)}/>
   
   
   
@@ -98,7 +95,7 @@ function navre(){
 
 
   </div>
-  <div onClick={navre} className='style.container' >
+  <div  className='style.container' >
     {children} </div> 
   
     </div>
