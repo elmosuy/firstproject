@@ -5,7 +5,7 @@ const nextConfig = {
   eslint: {
     dirs: ['pages', 'utils'], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
   },
-  { "extends": "next",
+ "extends": "next",
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off"
