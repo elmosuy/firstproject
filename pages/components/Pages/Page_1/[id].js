@@ -1,6 +1,9 @@
-import React from 'react'
-import data from "../../../api/All api/api_1.json"
-import { useRouter } from 'next/router'
+import React from "react";
+import { useRouter } from "next/router";
+import useFetchMovieGenreResults from "../../hooks/useFetchMovieGenreResults";
+import { useState } from "react";
+import useFetchTrendingCatagory from "../../hooks/useFetchTrendingCatagory";
+import useFetchTopRatedCatagory from "../../hooks/useFetchTopRatedCatagory";
 
 const item1 = () => {
     const router = useRouter()
