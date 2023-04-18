@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import data1 from "./api/All link/link_1.json";
 import data2 from "./api/All link/link_2.json";
 import data3 from "./api/All link/link_3.json";
@@ -161,7 +162,7 @@ const router=useRouter()
             name=""
             id=""
           />
-          <img src="/search.svg" alt="" width={20} />
+          <Image src="/search.svg" alt="" width={20} height={20} />
         </div>
   
         <section className="navlist">
