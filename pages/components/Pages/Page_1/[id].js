@@ -1,25 +1,15 @@
 import React from "react";
-import { useRouter } from "next/router";
-import useFetchMovieGenreResults from "../../hooks/useFetchMovieGenreResults";
-import { useState } from "react";
-import useFetchTrendingCatagory from "../../hooks/useFetchTrendingCatagory";
-import useFetchTopRatedCatagory from "../../hooks/useFetchTopRatedCatagory";
+import { useRouter ,useEffect } from "next/router";
 
-const useMovies = (genre) => {
-  switch (id) {
-    case 'Trending':
-      return useFetchTrendingCatagory()
-    case 'Top Rated"':
-      return useFetchTopRatedCatagory()
-    default:
-      return useFetchMovieGenreResults(id)
-  }
-}
+
+
 
 const item1 = () => {
-    const router = useRouter()
-    const { id } = router.query
-   const mymovies = useMovies(genre)
+    useEffect(() => {
+          const router = useRouter()
+          const { id } = router.query
+
+  });
 
   return (
     <div  className='texts'>
