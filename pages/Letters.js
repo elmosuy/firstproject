@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image';
 import data1 from "./api/All link/link_1.json";
 import data2 from "./api/All link/link_2.json";
 import data3 from "./api/All link/link_3.json";
@@ -162,7 +161,7 @@ const router=useRouter()
             name=""
             id=""
           />
-          <Image src="/search.svg" alt="" width={20} height={20} />
+          <img src="/search.svg" alt="" width={20} />
         </div>
   
         <section className="navlist">
@@ -170,7 +169,7 @@ const router=useRouter()
             <span onClick={handelNavList}>حرف الألف</span>
             <div className="one" id="navlist1">
               {data1.map((i) => (
-                <ul>
+                <ul kay={i.id}>
                    <li  onClick={() => router.push(`/components/Pages/Page_1/${i.id+1}`)}>{i.link}</li>
                 </ul>
               ))}
@@ -181,7 +180,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist2">
                 {data2.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_2/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -193,7 +192,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist3">
                 {data3.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_3/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -205,7 +204,7 @@ const router=useRouter()
             <div >
               <div className="one" id="navlist4">
                 {data4.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_4/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -217,7 +216,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist5">
                 {data5.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_5/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -229,7 +228,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist6">
                 {data6.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_6/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -241,7 +240,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist7">
                 {data7.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_7/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -253,7 +252,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist8">
                 {data8.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_8/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -265,7 +264,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist9">
                 {data9.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_9/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -277,7 +276,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist10">
                 {data10.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_10/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -289,7 +288,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist11">
                 {data11.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_11/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -301,7 +300,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist12">
                 {data12.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_12/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -313,7 +312,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist13">
                 {data13.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_13/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -325,7 +324,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist14">
                 {data14.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_14/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -337,7 +336,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist15">
                 {data15.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_15/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -349,7 +348,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist16">
                 {data16.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_16/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -361,7 +360,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist17">
                 {data17.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_17/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -373,7 +372,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist18">
                 {data18.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_18/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -385,7 +384,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist19">
                 {data19.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_19/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -397,7 +396,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist20">
                 {data20.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_20/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -409,7 +408,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist21">
                 {data21.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_21/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -421,7 +420,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist22">
                 {data22.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_22/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -433,7 +432,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist23">
                 {data23.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_23/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -445,7 +444,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist24">
                 {data24.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_24/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -457,7 +456,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist25">
                 {data25.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_25/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -469,7 +468,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist26">
                 {data26.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_26/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -481,7 +480,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist27">
                 {data27.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_27/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
@@ -493,7 +492,7 @@ const router=useRouter()
             <div className="letter">
               <div className="one" id="navlist28">
                 {data28.map((i) => (
-                  <ul>
+                  <ul kay={i.id}>
                     <li onClick={() => router.push(`/components/Pages/Page_28/${i.id}`)}>{i.link}</li>
                   </ul>
                 ))}
