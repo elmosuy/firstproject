@@ -1,5 +1,5 @@
-import React from "react";
-import { useRouter ,useEffect } from "next/router";
+import React, { useEffect } from 'react';
+import { useRouter  } from "next/router";
 
 
 
