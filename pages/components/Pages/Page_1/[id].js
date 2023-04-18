@@ -4,7 +4,7 @@ import { useRouter  } from "next/router";
 
 
 
-const item1 = () => {
+const Item = () => {
     useEffect(() => {
           const router = useRouter()
           const { id } = router.query
@@ -25,4 +25,4 @@ const item1 = () => {
   )
 }
 
-export default item1
+export default Item
