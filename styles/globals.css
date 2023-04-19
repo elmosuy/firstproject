@@ -138,7 +138,7 @@ a {
   .header h1{
     display: none;
   }
- 
+
   .header .list-header ul{
     width: 100%;
     font-size: 12.4px;
@@ -152,13 +152,20 @@ a {
  
   }
   .texts .text{
-    width: 320px;
+    width: 80%;
     padding: 8px;
     padding-top: 25px;
     font-size: small;
+    padding-bottom: 50px;
   }
   .show-letters{
     right: 1;
+  }
+  .text p:nth-child(2){
+  
+    font-size: 8px;
+   
+  
   }
 }
 .letters h2{
@@ -338,6 +345,8 @@ body{
   position: absolute;
   font-size: 15px;
   font-family: 'Reem Kufi', sans-serif;
+  bottom: 7px;
+  left: 10px;
 
 }
 
