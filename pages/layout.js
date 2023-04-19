@@ -16,6 +16,14 @@ const Layout = ({children}) => {
       <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Kufam&family=Noto+Nastaliq+Urdu&family=Reem+Kufi&family=Reem+Kufi+Fun&display=swap" rel="stylesheet"/>         <title>
             Dream | حلم
           </title>
+      <meta charset="UTF-8"/>
+      <meta name="application-name" content="courses 4 arab"/>
+      <meta name="author" content="Ali Hassan">
+      <meta name="description" content="تفسير جميع الاحلام بالاحرف الابجدية"/>
+      <meta name="Keywords" content="dream تفسير الاحلام">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+      <meta http-equiv="refresh" content="10"/>
       </Head>
       <section className="bouger-menu"  >
       <label class="burger" for="burger" >
