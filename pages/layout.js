@@ -22,7 +22,6 @@ const Layout = ({children}) => {
       <meta name="description" content="تفسير جميع الاحلام بالاحرف الابجدية"/>
       <meta name="Keywords" content="dream تفسير الاحلام"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta http-equiv="refresh" content="10"/>
       <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
       </Head>
       <section className="bouger-menu"  >
