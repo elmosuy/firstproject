@@ -162,7 +162,6 @@ const router=useRouter()
             name=""
             id=""
           />
-          <Image src="/search.svg" alt="" width={20} height={20} />
         </div>
   
         <section className="navlist">
