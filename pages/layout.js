@@ -40,10 +40,10 @@ const Layout = ({children}) => {
             <Letters />
       </div>
         <div className='media'>
-        <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/github.svg" width={35} height={37} /></a>
-        <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/linkedin.svg" width={37} height={40}/></a>
-       <a href="https://www.instagram.com"> <Image src="/insta.svg" width={37} height={40}/></a>
-       <a href="https://www.facebook.com"> <Image src="/facebook.svg" width={40} height={40}/></a>
+        <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/public/github.svg" width={35} height={37} /></a>
+        <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/public/linkedin.svg" width={37} height={40}/></a>
+       <a href="https://www.instagram.com"> <Image src="/public/insta.svg" width={37} height={40}/></a>
+       <a href="https://www.facebook.com"> <Image src="/public/facebook.svg" width={40} height={40}/></a>
 
         
 
