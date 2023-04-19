@@ -38,7 +38,7 @@ const Layout = ({children}) => {
         </div>
         <div  dir='rtl'>
             <Letters />
-//         </div>
+      </div>
 //         <div className='media'>
 //         <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/github.svg" width={35} height={37} /></a>
 //         <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/linkedin.svg" width={37} height={40}/></a>
