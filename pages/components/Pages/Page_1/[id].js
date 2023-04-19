@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useRouter  } from "next/router";
-
-
-
+import React from 'react'
+import data from "../../../api/All api/api_1.json"
+import { useRouter } from 'next/router'
 
 const Item = () => {
-    useEffect(() => {
-          const router = useRouter()
-          const { id } = router.query
-
-  });
-
+    const router = useRouter()
+    const { id } = router.query
   return (
     <div  className='texts'>
       <div className='text'>

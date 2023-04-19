@@ -2,7 +2,7 @@ import React from 'react'
 import data from "../../../api/All api/api_28.json"
 import { useRouter } from 'next/router'
 
-const item1 = () => {
+const Item28 = () => {
     const router = useRouter()
     const { id } = router.query
   return (
@@ -18,4 +18,4 @@ const item1 = () => {
   )
 }
 
-export default item1
+export default Item28
