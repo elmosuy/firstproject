@@ -18,11 +18,10 @@ const Layout = ({children}) => {
           </title>
       <meta charset="UTF-8"/>
       <meta name="application-name" content="courses 4 arab"/>
-      <meta name="author" content="Ali Hassan">
+      <meta name="author" content="Ali Hassan"/>
       <meta name="description" content="تفسير جميع الاحلام بالاحرف الابجدية"/>
-      <meta name="Keywords" content="dream تفسير الاحلام">
+      <meta name="Keywords" content="dream تفسير الاحلام"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- 
       <meta http-equiv="refresh" content="10"/>
       </Head>
       <section className="bouger-menu"  >
