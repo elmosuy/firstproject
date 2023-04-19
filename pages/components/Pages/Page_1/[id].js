@@ -3,9 +3,9 @@ import data from "../../../api/All api/api_1.json"
 import { useRouter } from 'next/router'
 
 const Item = () => {
-      useEffect(() => {
+      useEffect(()async => {
     const router = useRouter()
-    const { id } = router.query
+    const { id } = await  router.query
   }, [])
   return (
     <div  className='texts'>
