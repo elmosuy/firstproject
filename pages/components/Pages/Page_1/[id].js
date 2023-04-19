@@ -11,7 +11,7 @@ const Item = () => {
     <div  className='texts'>
       <div className='text'>
         _<p>
-            {data[id||1].text}
+            {data[1].text}
         </p>
 
       </div>
