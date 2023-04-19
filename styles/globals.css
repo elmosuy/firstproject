@@ -18,7 +18,7 @@ a {
   
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -27,7 +27,7 @@ a {
     background-color: rgb(18, 18, 18);
 
   }
-}
+} */
 
 .letters{
   width: 250px;
@@ -211,8 +211,12 @@ a {
   width: 100%;
   background-color: rgb(26, 26, 25);
   z-index: 1000;
+  color: #e9e9eb;
  
 
+}
+body{
+  background-color: rgb(19, 19, 18);
 }
 .header .list-header ul{
   list-style: none;
@@ -330,7 +334,12 @@ a {
  
 }
 
+.text p:nth-child(2){
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Reem Kufi', sans-serif;
 
+}
 
 .media{
   position: fixed;
