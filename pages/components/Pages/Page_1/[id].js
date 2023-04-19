@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 const Item = () => {
      
     const router = useRouter()
-    const { id } = await  router.query
+    const { id } =  router.query
   
   return (
     <div  className='texts'>
