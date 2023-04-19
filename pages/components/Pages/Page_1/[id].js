@@ -4,14 +4,14 @@ import { useRouter } from 'next/router'
 
 const Item = () => {
      
-//     const router = useRouter()
-//     const { id } = await  router.query
+    const router = useRouter()
+    const { id } = await  router.query
   
   return (
     <div  className='texts'>
       <div className='text'>
-        _<p>
-            {data[1].text}
+        <p>
+            {data[id||1].text}
         </p>
 
       </div>
