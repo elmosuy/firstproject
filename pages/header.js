@@ -1,13 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 
-const Header = () => {
+const Header = ({handelTheme}) => {
+
+  
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="logo-search">
             <div>
                {/* <Image width={50} src='/vetors.png' height={40}/> */}
-              <h1>Dream</h1> 
+              <h1 className="h1">Dream</h1> 
             </div>
             
           
@@ -16,17 +19,20 @@ const Header = () => {
       
       <div className="list-header">
         <ul dir="rtl">
-            <li>الصفحة الرئيسية</li>
+            <Link href="/"><li>الصفحة الرئيسية</li></Link>
             <li>الامام الصادق ع</li>
             <li>ابن سيرين</li>
             <li>من نحن</li>
         </ul>
       </div>
       <div class="container">
-  <input type="checkbox" class="checkbox" id="checkbox"/>
+  <input type="checkbox" class="checkbox" onClick={handelTheme} id="checkbox"/>
   <label class="switch" for="checkbox">
     <span class="slider"></span>
   </label>
+  <div>
+   
+  </div>
 </div>
 
     </div>
