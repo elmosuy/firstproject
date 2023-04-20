@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Letters from './Letters'
 import Header from './header'
 import Head from 'next/head'
@@ -8,23 +8,36 @@ const Layout = ({children}) => {
   const handelBorger = () => {
     const nav = document.getElementById("letters");
     nav.classList.toggle("show-letters");
-    
   };
+  const handelBorgeremove = () => {
+    const nav = document.getElementById("letters");
+    nav.classList.remove("show-letters");
+  };
+ const handelTheme = () => {
+    const nav = document.body;
+    nav.classList.toggle("show-theme");
+    const header=document.getElementById("header")
+    header.classList.toggle("show-theme-header");
+    const le=document.getElementById("letters")
+    le.classList.toggle("show-theme-list");
+    const all=document.getElementById("all")
+    all.classList.toggle("show-theme-all");
+    var text1=document.getElementById("text2")
+    text1.classList.toggle("text2")
+    
+ 
+  };
+
+
+  
   return (
-    <div>
+    <div className='dom'>
       <Head>
       <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Kufam&family=Noto+Nastaliq+Urdu&family=Reem+Kufi&family=Reem+Kufi+Fun&display=swap" rel="stylesheet"/>         <title>
             Dream | حلم
           </title>
-      <meta charset="UTF-8"/>
-      <meta name="application-name" content="courses 4 arab"/>
-      <meta name="author" content="Ali Hassan"/>
-      <meta name="description" content="تفسير جميع الاحلام بالاحرف الابجدية"/>
-      <meta name="Keywords" content="dream تفسير الاحلام"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
       </Head>
-      <section className="bouger-menu"  >
+      <section className="bouger-menu"   >
       <label class="burger" for="burger" >
             <input type="checkbox" className="check" id="burger" onClick={handelBorger} />
             <span ></span>
@@ -34,20 +47,24 @@ const Layout = ({children}) => {
       </section>
       
         <div>
-            <Header/>
+            <Header handelTheme={handelTheme}/>
         </div>
         <div  dir='rtl'>
-            <Letters />
-      </div>
+            <Letters handelBorgeremove={handelBorgeremove} />
+        </div>
         <div className='media'>
-
+        <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/github.svg" width={35} height={37} className='med' /></a>
+        <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/linkedin.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.instagram.com"> <Image src="/insta.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.facebook.com"> <Image src="/facebook.svg" width={40} height={40} className='med'/></a>
 
         
 
       </div>
 
-      
-        {children}
+      <span onClick={handelBorgeremove} id='all'>
+        {children }
+        </span>
     </div>
     
   )
