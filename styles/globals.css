@@ -111,9 +111,7 @@ a {
   font-family: 'Reem Kufi', sans-serif;
   
 }
-.textindex .leftq h2{
-color: #FFFFFF;
-}
+
 
 
 .header {
@@ -414,6 +412,9 @@ cursor: pointer;
 .show-theme-all .textindex{
   color:black;
 }
+.show-theme-all .company{
+  color:black;
+}
 .show-theme-all .leftq h2{
   color:black;
 }
@@ -444,7 +445,9 @@ cursor: pointer;
 }
 .about h2{
   font-size: 80px;
-  text-align: right;
+  text-align: center;
+  position: relative;
+  right: 90px;
   width: 100%;
   
 }
@@ -452,6 +455,7 @@ cursor: pointer;
   position: relative;
   top: 30px;
   font-size: large;
+  color: #4c4c4c;
   width: 70%;
 }
 
@@ -512,6 +516,7 @@ cursor: pointer;
   font-size: 34px;
 }
 @media only screen and (min-width: 768px) {
+
   .timeline:before {
     content: "";
     position: absolute;
@@ -615,11 +620,12 @@ cursor: pointer;
     position: fixed;
     z-index: 1202;
     top: 68px;
+    color: #5d5d5d;
     left: 35px;
-    font-weight: 100;
+    font-weight: 500;
     font-size: large;
     display: flex;
-    transform: rotate(90deg) scale(1.5);
+    transform: rotate(90deg) scale(1.6);
    
   }
 
@@ -715,6 +721,13 @@ cursor: pointer;
   .texts .textindex{
     width: 90%;
   }
+  .about h2{
+    position: relative;
+    left: 10px;
+    width: 100%;
+    font-size: 35px;
+  }
+
 
   .header .list-header ul{
     width: 70%;
@@ -764,6 +777,9 @@ cursor: pointer;
    
   
   }
+  .timeline{
+    width: 90%;
+  }
 }
 
 .anim2{
@@ -792,4 +808,22 @@ cursor: pointer;
   width: 50%;
   /* position: relative;
   right: 100px; */
+}
+
+.company{
+  color: #fffdfd;
+}
+.show-theme-all .n1{
+  color: #000000;
+}
+
+.textindex .leftq h2{
+  color: #ffffff;
+  }
+  .show-theme-all .leftq h2{
+  color: #000000;
+}
+.show-theme-header .logo-search h1{
+  background: linear-gradient(to right ,rgb(3, 3, 3),rgb(150, 148, 148),rgb(217, 217, 217));
+  -webkit-background-clip: text;
 }
