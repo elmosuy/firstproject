@@ -407,7 +407,7 @@ cursor: pointer;
   color: #000000;
 }
 .text2 p span{
-  background-color: rgb(205, 215, 4);
+  background-color: rgba(224, 236, 4, 0.487);
 }
 .show-theme-all .textindex{
   color:black;
@@ -826,4 +826,9 @@ cursor: pointer;
 .show-theme-header .logo-search h1{
   background: linear-gradient(to right ,rgb(3, 3, 3),rgb(150, 148, 148),rgb(217, 217, 217));
   -webkit-background-clip: text;
+}
+.show-theme-all .text{
+  background-color: #1e1f22;
+  color: white;
+
 }
