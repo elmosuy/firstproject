@@ -17,6 +17,9 @@ a {
   box-sizing: border-box;
   
 }
+.bouger-menu{
+  display: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -76,28 +79,30 @@ a {
   .bouger-menu{
     position: fixed;
     z-index: 1002;
-    top: 70px;
-    left: 20px;
-    transform: scale(.7);
+    top: 68px;
+    left: 35px;
+    font-weight: 100;
+    font-size: large;
     display: flex;
+    transform: rotate(90deg) scale(2);
    
   }
-  .burger {
+  /* .burger {
     position: relative;
     width: 40px;
     height: 30px;
     background: transparent;
     cursor: pointer;
     display: block;
-  }
+  } */
   
-  .burger input {
+  /* .burger input {
     position: absolute;
     
 
-  }
+  } */
   
-  .burger span {
+  /* .burger span {
     display: block;
     position: absolute;
     height: 4px;
@@ -108,9 +113,9 @@ a {
     left: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
-  }
+  } */
   
-  .burger span:nth-of-type(1) {
+  /* .burger span:nth-of-type(1) {
     top: 0px;
     transform-origin: left center;
   }
@@ -125,7 +130,7 @@ a {
     top: 100%;
     transform-origin: left center;
     transform: translateY(-100%);
-  }
+  } */
   
   .burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
