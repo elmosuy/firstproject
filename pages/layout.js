@@ -56,7 +56,7 @@ const Layout = ({children}) => {
         <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/arabic.jpg" width={35} height={37} className='med' /></a>
         <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/linkedin.svg" width={37} height={40} className='med'/></a>
        <a href="https://www.instagram.com"> <Image src="/insta.svg" width={37} height={40} className='med'/></a>
-       <a href="https://www.facebook.com"> <Image src="/facebook.svg" width={40} height={40} className='med'/></a>
+       <a href="https://www.facebook.com"> <Image src="/facebook.png" width={40} height={40} className='med'/></a>
 
         
 
