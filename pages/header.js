@@ -20,9 +20,9 @@ const Header = ({handelTheme}) => {
       <div className="list-header">
         <ul dir="rtl">
             <Link href="/"><li>الصفحة الرئيسية</li></Link>
-            <li>الامام الصادق ع</li>
-            <li>ابن سيرين</li>
-            <li>من نحن</li>
+            <Link href='/shere'><li>الامام الصادق ع</li></Link>
+
+            <Link href='/me'><li>من نحـــــن</li></Link>
         </ul>
       </div>
       <div class="container">
@@ -30,9 +30,11 @@ const Header = ({handelTheme}) => {
   <label class="switch" for="checkbox">
     <span class="slider"></span>
   </label>
-  <div>
-   
   </div>
+  <div>
+    <div className="titleWeb"><h2>تفسير الاحلام بالاحرف الابجدية</h2></div>
+   
+  
 </div>
 
     </div>
