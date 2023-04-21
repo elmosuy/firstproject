@@ -55,6 +55,9 @@ a {
   .textindex div p{
     font-size: medium;
   }
+ .texts .textindex{
+    width: 80%;
+  }
 
   .header{
     font-size: small;
@@ -99,7 +102,7 @@ a {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: rgb(198, 196, 196);
+    background: rgb(168, 156, 156);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -161,12 +164,13 @@ a {
     display: none;
   }
   .media{
-    transform: rotate(90deg) translateY(-160px) translateX(300px);
-    
+    opacity: 0;
+    transform: translateX(-200px);
   }
-  .media .med{
-    transform: rotate(-90deg);
+  .texts .textindex{
+    width: 90%;
   }
+
   .header .list-header ul{
     width: 100%;
     font-size: 12.4px;
@@ -186,7 +190,7 @@ a {
     font-size: smaller;
   }
  .texts .textindex{
-  width:90% ;
+  width:100%;
  }
 
   .texts .text{
@@ -545,22 +549,31 @@ cursor: pointer;
 .quran p span{
   background-color: rgba(206, 7, 73, 0.489);
 }
-.show-theme-all{
-  color:black;
-  
-}
 
-.all .quran {
+/* .all .quran {
   color: #000000;
+  background-color: #fffdfd;
  
  
+} */
+.all-them .textindex{
+  color: #e9e9eb;
+}
+.all-them .leftq h2{
+  color: #e9e9eb;
 }
 .text2{
-  color: #0f0e0e;
+  color: #000000;
 }
 .text2 .leftq h2{
   color: #000000;
 }
 .text2 p span{
   background-color: rgb(205, 215, 4);
+}
+.show-theme-all .textindex{
+  color:black;
+}
+.show-theme-all .leftq h2{
+  color:black;
 }
