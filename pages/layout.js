@@ -52,6 +52,15 @@ const Layout = ({children}) => {
         <div  dir='rtl'>
             <Letters handelBorgeremove={handelBorgeremove} />
         </div>
+      <div className='media'>
+        <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/firstproject/github.svg" width={35} height={37} className='med' /></a>
+        <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/firstproject/linkedin.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.instagram.com"> <Image src="/firstproject/insta.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.facebook.com"> <Image src="/firstproject/facebook.svg" width={40} height={40} className='med'/></a>
+
+        
+
+      </div> 
         
 
       <span onClick={handelBorgeremove} className='all-them' id='all'>
