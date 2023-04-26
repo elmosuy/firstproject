@@ -34,6 +34,8 @@ const Layout = ({children}) => {
     <div className='dom'>
       <Head>
           <link rel="icon" type="image/png" sizes="64x64" href="/firstproject/Logo.png"/>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9186682855877789"
+     crossorigin="anonymous"></script>
 
       <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Kufam&family=Noto+Nastaliq+Urdu&family=Reem+Kufi&family=Reem+Kufi+Fun&display=swap" rel="stylesheet"/>         <title>
             Dream | حلم
