@@ -33,7 +33,7 @@ const Layout = ({children}) => {
   return (
     <div className='dom'>
       <Head>
-          <link rel="icon" type="image/png" sizes="64x64" href="/firstproject/Logo.png"/>
+          <link rel="icon" type="image/png" sizes="64x64" href="/dr.png"/>
           
 
       <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Kufam&family=Noto+Nastaliq+Urdu&family=Reem+Kufi&family=Reem+Kufi+Fun&display=swap" rel="stylesheet"/>         <title>
