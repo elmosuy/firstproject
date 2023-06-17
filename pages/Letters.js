@@ -29,6 +29,7 @@ import data28 from "./api/All link/link_28.json";
 import data26 from "./api/All link/link_26.json";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 const Letters = ({handelBorgeremove}) => {
 
@@ -193,9 +194,10 @@ const router=useRouter()
             {
               filteredData.slice(0,n).map((el)=>(
                 <div key={el.id}>
-                   <h2 onClick={handelremove}>
-                     <span onClick={() => router.push(`/components/Pages/Page_1/${el.id+1}`)}>  {el.link}
-                   </span> </h2>
+                   <Link href={`/components/Pages/Page_1/${el.id+1}`}>
+                    <h2 onClick={handelremove}>
+                      {el.link}
+                    </h2></Link>
                 </div>
               
               ))
