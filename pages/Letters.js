@@ -147,7 +147,7 @@ const router=useRouter()
 
 
 
-  const [search, setsearch] = useState("ب");
+  const [search, setsearch] = useState("eewب");
 
   const handelremove = () => {
     const search = document.getElementById("searcher");
