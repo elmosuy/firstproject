@@ -28,17 +28,19 @@ const Layout = ({children}) => {
  
   };
 
-
+  const handelremove = () => {
+    const search = document.getElementById("searcher");
+    search.classList.remove("show-search");
+  };
   
   return (
     <div className='dom'>
       <Head>
-          <link rel="icon" type="image/png" sizes="64x64" href="/dr.png"/>
-          
-
       <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Kufam&family=Noto+Nastaliq+Urdu&family=Reem+Kufi&family=Reem+Kufi+Fun&display=swap" rel="stylesheet"/>         <title>
             Dream | حلم
           </title>
+          <link rel="icon" type="image/png" sizes="64x64" href="/dr.png"/>
+
       </Head>
       <section className="bouger-menu"   >
       <label class="burger" for="burger" >
@@ -53,14 +55,19 @@ const Layout = ({children}) => {
         <div  dir='rtl'>
             <Letters handelBorgeremove={handelBorgeremove} />
         </div>
-          
-      
+        {/* <div className='media'>
+        <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/github.svg" width={35} height={37} className='med' /></a>
+        <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/linkedin.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.instagram.com"> <Image src="/insta.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.facebook.com"> <Image src="/facebook.svg" width={40} height={40} className='med'/></a>
 
         
 
+      </div> */}
+    <div onClick={handelremove}>
       <span onClick={handelBorgeremove} className='all-them' id='all'>
         {children }
-        </span>
+        </span></div>
     </div>
     
   )

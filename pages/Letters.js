@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data1 from "./api/All link/link_1.json";
 import data2 from "./api/All link/link_2.json";
 import data3 from "./api/All link/link_3.json";
@@ -30,7 +30,7 @@ import data26 from "./api/All link/link_26.json";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const Letters = () => {
+const Letters = ({handelBorgeremove}) => {
 
 const router=useRouter()
   const handelNavList = () => {
@@ -147,11 +147,35 @@ const router=useRouter()
 
 
 
+  const [search, setsearch] = useState("ب");
+
+  const handelremove = () => {
+    const search = document.getElementById("searcher");
+    search.classList.remove("show-search");
+  };
+  const filteredData = data1.filter((el) => {return el.link.toLowerCase().includes(search)})
+   
+    
+
+  const [n, setn] = useState(10)
+  const loop=()=>{
+  setn(n+70)
+  
+  }
+
+  useEffect(() => {
+    const search = document.getElementById("searcher");
+    if (filteredData.length>1){
+      
+      search.classList.add("show-search");
+ }
+ }, [search])
 
 
 
   return (
-    <div className="letter">
+    <div className="letter" id="letter">
+      
 
       <div className="letters" id="letters">
         <div className="search-letters">
@@ -161,9 +185,22 @@ const router=useRouter()
             placeholder=" البحث عن تفسير ..."
             name=""
             id=""
+            onChange={(e)=>setsearch(e.target.value)}
           />
+          <Image src="/search.svg" alt="" width={20} height={20} />
         </div>
-  
+          <div id="searcher" className="searcher" >
+            {
+              filteredData.slice(0,n).map((el)=>(
+                <div key={el.id}>
+                   <h2 onClick={handelremove}>
+                     <span onClick={() => router.push(`/components/Pages/Page_1/${el.id+1}`)}>  {el.link}
+                   </span> </h2>
+                </div>
+              
+              ))
+            }
+          </div>
         <section className="navlist">
           <div className="letter">
             <span onClick={handelNavList}>حرف الألف</span>
