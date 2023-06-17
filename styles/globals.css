@@ -193,7 +193,8 @@ cursor: pointer;
 .search-letters input{
   height: 30px;
   background-color: transparent;
-  border: .5px solid  rgb(75, 75, 75);
+  color: #79797b;
+  border: .5px solid  rgb(20, 20, 20);
   border-radius: 5px;
   
 
@@ -203,10 +204,7 @@ cursor: pointer;
   left: 38px;
   top: 5px;
 }
-.search-letters input::placeholder{
-  color: antiquewhite;
 
-}
 .search-letters input:focus{
   outline: .5px solid  rgb(75, 75, 75);
 }
@@ -281,9 +279,7 @@ cursor: pointer;
 .show-theme-list ul ,.show-theme-list span {
   color: black;
 }
-.show-theme-list input::placeholder{
-  color: black;
-}
+
 .show-theme-list::-webkit-scrollbar {
   background-color: transparent;
 }
@@ -540,6 +536,63 @@ cursor: pointer;
   color: rgb(124, 124, 124);
   font-size: 34px;
 }
+
+/* searcher */
+.searcher{
+  position: fixed;
+  right: 36px;
+  top: 80px;
+  text-align: right;
+  padding-left: 30px;
+  height: 70vh;
+  z-index: 2000;
+  background-color: rgb(7, 4, 4);
+  overflow-y: scroll;
+  top: 100px;
+  width: 170px;
+  height: 30vh;
+  display: none;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.searcher::-webkit-scrollbar{
+  display: none;
+}
+.searcher h2{
+  height: 40px;
+  cursor: pointer;
+}
+.searcher h2 span{
+  font-size: 14px;
+  color: #e9e9eb;
+  
+}
+.search-item{
+  display: flex;
+  margin-right: 10px;
+  text-align: left;
+}
+.search-item p{
+  margin-right: 13px;
+  font-size: 12px;
+  color: #a0a0a2;
+}
+
+.searcher h2:hover{
+  color: #fff;
+  
+}
+.show-search{
+  display: block;
+}
+.more{
+  text-align: center;
+  cursor: pointer;
+
+}
+
+
 @media only screen and (min-width: 768px) {
 
   .timeline:before {
@@ -875,4 +928,7 @@ cursor: pointer;
 }
 .letter::-webkit-scrollbar{
   width: 100px;
+}
+.show-theme-list .search-letters{
+  color: #000000;
 }
