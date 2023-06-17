@@ -562,12 +562,10 @@ cursor: pointer;
 .searcher h2{
   height: 40px;
   cursor: pointer;
-}
-.searcher h2 span{
   font-size: 14px;
   color: #e9e9eb;
-  
 }
+
 .search-item{
   display: flex;
   margin-right: 10px;
